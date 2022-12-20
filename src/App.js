@@ -46,7 +46,6 @@ export default function App() {
         return (
             <Course 
                 key={course.id}
-                id={course.id}
                 name={course.name}
                 company={course.company}
                 date={course.date}
@@ -61,7 +60,6 @@ export default function App() {
         return (
             <Language 
                 key={language.id}
-                id={language.name}
                 language={language.language}
                 level={language.level}
             />
@@ -91,32 +89,33 @@ export default function App() {
     return (
         <div>
             <Navbar />
+            
             <h4 className='col-12 margin-bottom'>CONTACT ME</h4>
-            <section className="app-contacts">
+            <section className='wrap-center'>
                 {contacts}
             </section>
             <hr />
 
             <h4 className='col-12 margin-bottom'>EDUCATION</h4>
-            <section className="wrap">
+            <section className='wrap-center'>
                 {education}
             </section>
             <hr />
 
             <h4 className='col-12 margin-bottom'>PROFESSIONAL EXPERIENCE</h4>
-            <section className="wrap">
+            <section className='wrap-center'>
                 {experiences}
             </section>
             <hr />
 
             <h4 className='col-12 margin-bottom app-courses'>COURSES AND CERTIFICATIONS
-                <button className="btn btn-secondary btn-sm" onClick={handleOnClick}>{isShown ? 'Hide' : 'Show'} certificates</button>
+                <button className='btn btn-secondary btn-sm' onClick={handleOnClick}>{isShown ? 'Hide' : 'Show'} certificates</button>
             </h4>
             {courses}
             <hr />
 
             <h4 className='col-12 margin-bottom'>LANGUAGES</h4>
-            <section className="app-contacts">
+            <section className='wrap-center'>
                 {languages}
             </section>
             <hr />

@@ -13,5 +13,10 @@ export default [
         id: 3,
         name: 'linkedIn',
         value: 'https://www.linkedin.com/in/noqas/'
+    },
+    {
+        id: 4,
+        name: 'github',
+        value: 'https://github.com/noqas/'
     }
 ]
